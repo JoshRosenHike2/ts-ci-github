@@ -1,4 +1,9 @@
 [ {
+  "originalGuid" : "07a9bede-3f0b-4352-bcf1-b9121b288143",
+  "mappedGuid" : "b33606e0-5823-4677-8975-5f8c2458a209",
+  "counter" : 0,
+  "additionalMapping" : { }
+}, {
   "originalGuid" : "3256f617-66d3-4433-aac9-4570d361be65",
   "mappedGuid" : "8b188c4a-927a-41d2-9a10-6106d39ae87f",
   "counter" : 0,
