@@ -1,0 +1,41 @@
+guid: 864e2d88-892f-4c24-bff4-623ca6007853
+answer:
+  name: "Total sales, Total quantity purchased by city"
+  tables:
+  - id: (Sample) Retail - Apparel
+    name: (Sample) Retail - Apparel
+    fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+  search_query: "[sales] [quantity purchased] [city]"
+  answer_columns:
+  - name: Total quantity purchased
+  - name: Total sales
+  - name: city
+  table:
+    table_columns:
+    - column_id: Total quantity purchased
+      show_headline: false
+    - column_id: Total sales
+      show_headline: false
+    - column_id: city
+      show_headline: false
+    ordered_column_ids:
+    - city
+    - Total sales
+    - Total quantity purchased
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: COLUMN
+    chart_columns:
+    - column_id: Total quantity purchased
+    - column_id: Total sales
+    - column_id: city
+    axis_configs:
+    - x:
+      - city
+      "y":
+      - Total sales
+      - Total quantity purchased
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"city\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}},{\"columnId\": \"Total quantity purchased\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"d51114f2-beb3-4981-a0b2-f862e025b700\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"3ffe947e-8451-41e8-9501-b3f65c8136d1\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total quantity purchased\"],\"isOpposite\": true}},{\"id\": \"b29c8e20-4cc9-4546-b880-0aa65cd5bc3d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"city\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total sales\",\"color\": \"#48D1E0\"},{\"serieName\": \"Total quantity purchased\",\"color\": \"#2E75F0\"}]}"
+  display_mode: CHART_MODE
