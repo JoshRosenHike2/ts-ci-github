@@ -1,0 +1,38 @@
+guid: 6ef46451-6361-4256-864c-34a15ae453e4
+liveboard:
+  name: Demo
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total quantity purchased by city
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+      search_query: "[quantity purchased] [city]"
+      answer_columns:
+      - name: Total quantity purchased
+      - name: city
+      table:
+        table_columns:
+        - column_id: Total quantity purchased
+          show_headline: false
+        - column_id: city
+          show_headline: false
+        ordered_column_ids:
+        - city
+        - Total quantity purchased
+        client_state: ""
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Total quantity purchased
+        - column_id: city
+        axis_configs:
+        - x:
+          - city
+          "y":
+          - Total quantity purchased
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: de8cfcaf-7ea0-4890-bab3-ecca11e8bab3
