@@ -36,3 +36,57 @@ liveboard:
         client_state: ""
       display_mode: CHART_MODE
     viz_guid: de8cfcaf-7ea0-4890-bab3-ecca11e8bab3
+  - id: Viz_2
+    answer:
+      name: "Total sales by county, product, latitude, item type, longitude"
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+      search_query: "[county] [product] [latitude] [item type] [longitude] [sales]"
+      answer_columns:
+      - name: Total sales
+      - name: county
+      - name: item type
+      - name: latitude
+      - name: longitude
+      - name: product
+      table:
+        table_columns:
+        - column_id: Total sales
+          show_headline: false
+        - column_id: county
+          show_headline: false
+        - column_id: item type
+          show_headline: false
+        - column_id: latitude
+          show_headline: false
+        - column_id: longitude
+          show_headline: false
+        - column_id: product
+          show_headline: false
+        ordered_column_ids:
+        - county
+        - product
+        - latitude
+        - item type
+        - longitude
+        - Total sales
+        client_state: ""
+      chart:
+        type: GEO_AREA
+        chart_columns:
+        - column_id: Total sales
+        - column_id: county
+        - column_id: item type
+        - column_id: latitude
+        - column_id: longitude
+        - column_id: product
+        axis_configs:
+        - x:
+          - county
+          "y":
+          - Total sales
+        client_state: ""
+      display_mode: TABLE_MODE
+    viz_guid: 970ed41a-5d45-4728-9f73-a08bd33f2b0b
