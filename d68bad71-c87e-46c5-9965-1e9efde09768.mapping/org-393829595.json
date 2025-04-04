@@ -18,8 +18,20 @@
     "f1ae7cf9-f288-4d1b-922c-3ea436a9bdcd" : "35cc38d3-f266-4c59-9c0c-e1bbbbcccd30"
   }
 }, {
+  "originalGuid" : "4cefa1c9-e914-4d37-8709-852c890d7faa",
+  "mappedGuid" : "4cefa1c9-e914-4d37-8709-852c890d7faa",
+  "counter" : 0,
+  "additionalMapping" : {
+    "970ed41a-5d45-4728-9f73-a08bd33f2b0b" : "dba3141f-d01f-401d-ac96-b3b8c7f2c59b"
+  }
+}, {
   "originalGuid" : "07a9bede-3f0b-4352-bcf1-b9121b288143",
   "mappedGuid" : "b33606e0-5823-4677-8975-5f8c2458a209",
+  "counter" : 0,
+  "additionalMapping" : { }
+}, {
+  "originalGuid" : "1d63d0f9-82f4-4b1d-8f54-d01a4c885061",
+  "mappedGuid" : "19469f4c-68d9-4d72-843d-9a6c3cd3ac59",
   "counter" : 0,
   "additionalMapping" : { }
 }, {
