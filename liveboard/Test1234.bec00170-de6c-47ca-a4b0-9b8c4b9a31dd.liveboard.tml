@@ -1,0 +1,50 @@
+guid: bec00170-de6c-47ca-a4b0-9b8c4b9a31dd
+liveboard:
+  name: Test1234
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total sales by Total quantity purchased and county
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+      search_query: "[quantity purchased] [sales] [city] [county]"
+      answer_columns:
+      - name: Total quantity purchased
+      - name: Total sales
+      - name: city
+      - name: county
+      table:
+        table_columns:
+        - column_id: Total quantity purchased
+          show_headline: false
+        - column_id: Total sales
+          show_headline: false
+        - column_id: city
+          show_headline: false
+        - column_id: county
+          show_headline: false
+        ordered_column_ids:
+        - city
+        - county
+        - Total quantity purchased
+        - Total sales
+        client_state: ""
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: Total quantity purchased
+        - column_id: Total sales
+        - column_id: city
+        - column_id: county
+        axis_configs:
+        - x:
+          - Total quantity purchased
+          "y":
+          - Total sales
+          color:
+          - county
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 85037e92-9404-4ccf-ba87-4c0a219fcf33
