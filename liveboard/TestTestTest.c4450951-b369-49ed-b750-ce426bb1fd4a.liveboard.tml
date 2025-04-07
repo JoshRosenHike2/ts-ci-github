@@ -1,0 +1,49 @@
+guid: c4450951-b369-49ed-b750-ce426bb1fd4a
+liveboard:
+  name: TestTestTest
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: "Total quantity purchased by latitude, longitude"
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+      search_query: "[product] [longitude] [latitude] [quantity purchased]"
+      answer_columns:
+      - name: Total quantity purchased
+      - name: latitude
+      - name: longitude
+      - name: product
+      table:
+        table_columns:
+        - column_id: Total quantity purchased
+          show_headline: false
+        - column_id: latitude
+          show_headline: false
+        - column_id: longitude
+          show_headline: false
+        - column_id: product
+          show_headline: false
+        ordered_column_ids:
+        - product
+        - longitude
+        - latitude
+        - Total quantity purchased
+        client_state: ""
+      chart:
+        type: GEO_BUBBLE
+        chart_columns:
+        - column_id: Total quantity purchased
+        - column_id: latitude
+        - column_id: longitude
+        - column_id: product
+        axis_configs:
+        - x:
+          - latitude
+          - longitude
+          "y":
+          - Total quantity purchased
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 57df671b-a525-4213-8f12-281a98c501a9
