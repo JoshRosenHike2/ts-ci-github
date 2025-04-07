@@ -18,6 +18,13 @@
     "f1ae7cf9-f288-4d1b-922c-3ea436a9bdcd" : "35cc38d3-f266-4c59-9c0c-e1bbbbcccd30"
   }
 }, {
+  "originalGuid" : "c4450951-b369-49ed-b750-ce426bb1fd4a",
+  "mappedGuid" : "970291af-8c49-481d-b8c0-648adbb3c040",
+  "counter" : 0,
+  "additionalMapping" : {
+    "57df671b-a525-4213-8f12-281a98c501a9" : "b3eeace9-d248-4257-ab3a-f77a8dcbdbdd"
+  }
+}, {
   "originalGuid" : "4cefa1c9-e914-4d37-8709-852c890d7faa",
   "mappedGuid" : "4cefa1c9-e914-4d37-8709-852c890d7faa",
   "counter" : 0,
