@@ -1,0 +1,215 @@
+guid: fbd05d0f-283a-459d-8f27-e75083386901
+liveboard:
+  name: Hike 2 Demo Data Liveboard
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Transactions
+      description: Map of Accounts across the US
+      tables:
+      - id: Hike2_Financial_Demo_Data
+        name: Hike2_Financial_Demo_Data
+        fqn: eb6ac4de-4322-4050-8df8-17e8632ece96
+      search_query: "[Account Id] [Transaction Id] [Account Type] [City] [Country] [Currency] [Customer Id] [Description] [First Name] [Last Name] [Merchant Id] [Product Id] [Merchant Name] [State] [Product Type] [Product Name] [Transaction Type] [Amount]"
+      answer_columns:
+      - name: Account Id
+      - name: Account Type
+      - name: City
+      - name: Country
+      - name: Currency
+      - name: Customer Id
+      - name: Description
+      - name: First Name
+      - name: Last Name
+      - name: Merchant Id
+      - name: Merchant Name
+      - name: Product Id
+      - name: Product Name
+      - name: Product Type
+      - name: State
+      - name: Total Amount
+        format:
+          category: CURRENCY
+          currencyFormatConfig:
+            locale: USD
+            unit: AUTO
+            decimals: 2.0
+            toSeparateThousands: true
+          isCategoryEditable: true
+      - name: Transaction Id
+      - name: Transaction Type
+      table:
+        table_columns:
+        - column_id: Account Id
+          show_headline: false
+        - column_id: Account Type
+          show_headline: false
+        - column_id: City
+          show_headline: false
+        - column_id: Country
+          show_headline: false
+        - column_id: Currency
+          show_headline: false
+        - column_id: Customer Id
+          show_headline: false
+        - column_id: Description
+          show_headline: false
+        - column_id: First Name
+          show_headline: false
+        - column_id: Last Name
+          show_headline: false
+        - column_id: Merchant Id
+          show_headline: false
+        - column_id: Merchant Name
+          show_headline: false
+        - column_id: Product Id
+          show_headline: false
+        - column_id: Product Name
+          show_headline: false
+        - column_id: Product Type
+          show_headline: false
+        - column_id: State
+          show_headline: false
+        - column_id: Total Amount
+          show_headline: false
+        - column_id: Transaction Id
+          show_headline: false
+        - column_id: Transaction Type
+          show_headline: false
+        ordered_column_ids:
+        - Account Id
+        - Transaction Id
+        - Account Type
+        - City
+        - Country
+        - Currency
+        - Customer Id
+        - Description
+        - First Name
+        - Last Name
+        - Merchant Id
+        - Product Id
+        - Merchant Name
+        - State
+        - Product Type
+        - Product Name
+        - Transaction Type
+        - Total Amount
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Account Id\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Account Id
+        - column_id: Account Type
+        - column_id: City
+        - column_id: Country
+        - column_id: Currency
+        - column_id: Customer Id
+        - column_id: Description
+        - column_id: First Name
+        - column_id: Last Name
+        - column_id: Merchant Id
+        - column_id: Merchant Name
+        - column_id: Product Id
+        - column_id: Product Name
+        - column_id: Product Type
+        - column_id: State
+        - column_id: Total Amount
+        - column_id: Transaction Id
+        - column_id: Transaction Type
+        axis_configs:
+        - "y":
+          - Account Id
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Account Id\",\"columnProperty\": {}},{\"columnId\": \"763a3e8c-e7b0-4dfa-a0cc-fecbdf3a9865\",\"columnProperty\": {}},{\"columnId\": \"4a2ee745-5630-45d3-87e0-3b6ccc21f9ce\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a033ee1f-bd90-421d-8a24-8779bc698c7b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Account Id\"],\"isOpposite\": false}},{\"id\": \"04949b3e-4a7d-4c6a-bd82-69179c28814c\",\"properties\": {\"axisType\": \"X\"}}],\"systemSeriesColors\": [{\"serieName\": \"acc001\",\"color\": \"#48D1E0\"},{\"serieName\": \"acc002\",\"color\": \"#2E75F0\"},{\"serieName\": \"dccfd194-dadc-4a1c-b6a9-50ed845546f4\",\"color\": \"#2E75F0\"}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Account Id\",\"colorMap\": [{\"serieName\": \"d497fb35-ff50-43c7-9a40-7effca4804a4\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
+      display_mode: TABLE_MODE
+    viz_guid: 5dc4b109-2813-4756-99de-ce09f35f2141
+  - id: Viz_2
+    answer:
+      name: Most Expensive Transactions
+      description: Top Transactions
+      tables:
+      - id: Hike2_Financial_Demo_Data
+        name: Hike2_Financial_Demo_Data
+        fqn: eb6ac4de-4322-4050-8df8-17e8632ece96
+      search_query: "top [Amount] by [Transaction Id]"
+      answer_columns:
+      - name: Total Amount
+      - name: Transaction Id
+      table:
+        table_columns:
+        - column_id: Total Amount
+          show_headline: false
+        - column_id: Transaction Id
+          show_headline: false
+        ordered_column_ids:
+        - Transaction Id
+        - Total Amount
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Transaction Id\",\"columnProperty\": {}},{\"columnId\": \"Total Amount\",\"columnProperty\": {}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Total Amount
+        - column_id: Transaction Id
+        axis_configs:
+        - x:
+          - Transaction Id
+          "y":
+          - Total Amount
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Transaction Id\",\"columnProperty\": {}},{\"columnId\": \"da76c3af-0c10-4c27-99dc-6d3b8c06eb7c\",\"columnProperty\": {}},{\"columnId\": \"94ddf344-2d61-4be1-af30-1e57ce68388b\",\"columnProperty\": {}},{\"columnId\": \"Total Amount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"96f8f4ba-75df-4313-9e00-662bfb8f9b47\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Amount\"],\"isOpposite\": false}},{\"id\": \"ae4714c8-4e0a-4722-a044-86a5dbf9bf74\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Transaction Id\"]}}],\"systemSeriesColors\": [{\"serieName\": \"29043ae4-4339-4804-8290-1ed212034ebc\",\"color\": \"#747E8C\"},{\"serieName\": \"Total Amount\",\"color\": \"#06BF7F\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 352e1d2c-0e1a-45f4-a104-262dc6eacd7d
+  - id: Viz_3
+    answer:
+      name: Top Spending Customers
+      description: Top Transactions
+      tables:
+      - id: Hike2_Financial_Demo_Data
+        name: Hike2_Financial_Demo_Data
+        fqn: eb6ac4de-4322-4050-8df8-17e8632ece96
+      search_query: "top [Amount] [First Name] [Last Name]"
+      answer_columns:
+      - name: First Name
+      - name: Last Name
+      - name: Total Amount
+      table:
+        table_columns:
+        - column_id: First Name
+          show_headline: false
+        - column_id: Last Name
+          show_headline: false
+        - column_id: Total Amount
+          show_headline: false
+        ordered_column_ids:
+        - First Name
+        - Last Name
+        - Total Amount
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"First Name\",\"columnProperty\": {}},{\"columnId\": \"Last Name\",\"columnProperty\": {}},{\"columnId\": \"Total Amount\",\"columnProperty\": {}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: First Name
+        - column_id: Last Name
+        - column_id: Total Amount
+        axis_configs:
+        - x:
+          - Last Name
+          - First Name
+          "y":
+          - Total Amount
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"7f01af21-5dfd-4adc-833c-72807795be0d\",\"columnProperty\": {}},{\"columnId\": \"c794d19c-1114-4718-80e2-37a6a0c5702b\",\"columnProperty\": {}},{\"columnId\": \"Last Name\",\"columnProperty\": {}},{\"columnId\": \"First Name\",\"columnProperty\": {}},{\"columnId\": \"Total Amount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"673718c8-8548-4640-b34d-ffcfb1fd1c06\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Amount\"],\"isOpposite\": false}},{\"id\": \"aaeaf93f-e5de-4f16-abfd-06a93d3b40fa\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Last Name\",\"First Name\"]}}],\"systemSeriesColors\": [{\"serieName\": \"29043ae4-4339-4804-8290-1ed212034ebc\",\"color\": \"#747E8C\"},{\"serieName\": \"c501f9d2-5362-4752-861f-41539b4ca9d2\",\"color\": \"#06BF7F\"},{\"serieName\": \"acc001, alice\",\"color\": \"#48D1E0\"},{\"serieName\": \"acc002, bob\",\"color\": \"#2E75F0\"},{\"serieName\": \"alice\",\"color\": \"#48D1E0\"},{\"serieName\": \"bob\",\"color\": \"#2E75F0\"},{\"serieName\": \"Total Amount\",\"color\": \"#FCC838\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: a5ce4bbc-d82d-4d30-9991-3787dc5366dd
+  layout:
+    tiles:
+    - visualization_id: Viz_2
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_3
+      size: SMALL
+    - visualization_id: Viz_1
+      size: MEDIUM_SMALL
