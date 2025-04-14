@@ -1,0 +1,44 @@
+guid: 0accd2a8-4fb5-4de8-946c-330671ed6c91
+model:
+  name: Test_Model_CICD
+  model_tables:
+  - name: CUSTOMERS
+    fqn: 0230fd5f-45eb-45cf-a8d4-ba0f7b08fef9
+  - name: MERCHANT_DIRECTORY
+    fqn: f2337edb-cca9-4b0f-abe5-d843d4fe19ef
+    joins:
+    - with: CUSTOMERS
+      'on': '[MERCHANT_DIRECTORY::CATEGORY] = [CUSTOMERS::CITY]'
+      type: INNER
+      cardinality: MANY_TO_ONE
+  columns:
+  - name: City
+    column_id: CUSTOMERS::CITY
+    properties:
+      column_type: ATTRIBUTE
+  - name: Created At
+    column_id: CUSTOMERS::CREATED_AT
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Merchant Name
+    column_id: MERCHANT_DIRECTORY::MERCHANT_NAME
+    properties:
+      column_type: ATTRIBUTE
+  - name: Country
+    column_id: MERCHANT_DIRECTORY::COUNTRY
+    properties:
+      column_type: ATTRIBUTE
+  - name: Category
+    column_id: MERCHANT_DIRECTORY::CATEGORY
+    properties:
+      column_type: ATTRIBUTE
+  - name: Merchant Id
+    column_id: MERCHANT_DIRECTORY::MERCHANT_ID
+    properties:
+      column_type: ATTRIBUTE
+  properties:
+    is_bypass_rls: false
+    join_progressive: true
+    sage_config:
+      is_sage_enabled: false
