@@ -1,0 +1,15 @@
+[ {
+  "originalGuid" : "eb6ac4de-4322-4050-8df8-17e8632ece96",
+  "mappedGuid" : "e71fd93b-c2b8-4fc5-acc6-ad8f801b0e4e",
+  "counter" : 0,
+  "additionalMapping" : { }
+}, {
+  "originalGuid" : "fbd05d0f-283a-459d-8f27-e75083386901",
+  "mappedGuid" : "8879b4ae-9d54-4a83-bb32-ad6fb36faeac",
+  "counter" : 0,
+  "additionalMapping" : {
+    "a5ce4bbc-d82d-4d30-9991-3787dc5366dd" : "64f2c26e-d5ee-4b88-ad2f-f574fe75e678",
+    "352e1d2c-0e1a-45f4-a104-262dc6eacd7d" : "3fff1c3c-7075-4f8d-b440-b13e059e187f",
+    "5dc4b109-2813-4756-99de-ce09f35f2141" : "22f5780c-f943-4c7c-a32c-c1b64dcd46c1"
+  }
+} ]
