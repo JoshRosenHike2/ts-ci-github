@@ -1,6 +1,7 @@
-guid: eb6ac4de-4322-4050-8df8-17e8632ece96
+guid: 987f0810-a1c3-46f9-9e92-e6d251352a84
 model:
-  name: Hike2_Financial_Demo_Data
+  name: Demo_Transaction_Data
+  description: Demo transaction data from Hike2 Snowflake database.
   model_tables:
   - name: TRANSACTIONS
     fqn: c70b4b9d-4015-4cd1-b497-bb16a488aa63
@@ -35,12 +36,6 @@ model:
     column_id: ACCOUNTS::ACCOUNT_TYPE
     properties:
       column_type: ATTRIBUTE
-  - name: Balance
-    column_id: ACCOUNTS::BALANCE
-    properties:
-      column_type: MEASURE
-      aggregation: SUM
-      index_type: DONT_INDEX
   - name: Currency
     column_id: ACCOUNTS::CURRENCY
     properties:
@@ -94,7 +89,7 @@ model:
     column_id: PRODUCTS::PRODUCT_NAME
     properties:
       column_type: ATTRIBUTE
-  - name: Product Type
+  - name: Payment Type
     column_id: PRODUCTS::PRODUCT_TYPE
     properties:
       column_type: ATTRIBUTE
