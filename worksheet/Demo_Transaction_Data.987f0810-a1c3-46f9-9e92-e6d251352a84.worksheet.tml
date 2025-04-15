@@ -1,0 +1,118 @@
+guid: 987f0810-a1c3-46f9-9e92-e6d251352a84
+model:
+  name: Demo_Transaction_Data
+  description: Demo transaction data from Hike2 Snowflake database.
+  model_tables:
+  - name: TRANSACTIONS
+    fqn: c70b4b9d-4015-4cd1-b497-bb16a488aa63
+    joins:
+    - with: ACCOUNTS
+      'on': '[TRANSACTIONS::ACCOUNT_ID] = [ACCOUNTS::ACCOUNT_ID]'
+      type: INNER
+      cardinality: MANY_TO_ONE
+    - with: MERCHANT_DIRECTORY
+      referencing_join: SYS_CONSTRAINT_50c1a3dd-5fa8-477e-a18b-3503026c15fd
+    - with: PRODUCTS
+      'on': '[TRANSACTIONS::ACCOUNT_ID] = [PRODUCTS::ACCOUNT_ID]'
+      type: INNER
+      cardinality: MANY_TO_ONE
+  - name: PRODUCTS
+    fqn: 7a749421-ca0d-4cdb-8c88-e642f26f59c1
+  - name: MERCHANT_DIRECTORY
+    fqn: f2337edb-cca9-4b0f-abe5-d843d4fe19ef
+  - name: ACCOUNTS
+    fqn: b3c1c072-aeb8-4c09-bced-3a352fa33949
+    joins:
+    - with: CUSTOMERS
+      referencing_join: SYS_CONSTRAINT_d7968e67-62bf-439d-b59b-c930a04f2b48
+  - name: CUSTOMERS
+    fqn: 0230fd5f-45eb-45cf-a8d4-ba0f7b08fef9
+  columns:
+  - name: Account Id
+    column_id: ACCOUNTS::ACCOUNT_ID
+    properties:
+      column_type: ATTRIBUTE
+  - name: Account Type
+    column_id: ACCOUNTS::ACCOUNT_TYPE
+    properties:
+      column_type: ATTRIBUTE
+  - name: Currency
+    column_id: ACCOUNTS::CURRENCY
+    properties:
+      column_type: ATTRIBUTE
+  - name: Customer Id
+    column_id: ACCOUNTS::CUSTOMER_ID
+    properties:
+      column_type: ATTRIBUTE
+  - name: City
+    column_id: CUSTOMERS::CITY
+    properties:
+      column_type: ATTRIBUTE
+  - name: Country
+    column_id: CUSTOMERS::COUNTRY
+    properties:
+      column_type: ATTRIBUTE
+  - name: First Name
+    column_id: CUSTOMERS::FIRST_NAME
+    properties:
+      column_type: ATTRIBUTE
+  - name: Last Name
+    column_id: CUSTOMERS::LAST_NAME
+    properties:
+      column_type: ATTRIBUTE
+  - name: State
+    column_id: CUSTOMERS::STATE
+    properties:
+      column_type: ATTRIBUTE
+      geo_config:
+        region_name:
+          country: UNITED STATES
+          region_name: state
+  - name: Merchant Name
+    column_id: MERCHANT_DIRECTORY::MERCHANT_NAME
+    properties:
+      column_type: ATTRIBUTE
+  - name: Merchant Id
+    column_id: MERCHANT_DIRECTORY::MERCHANT_ID
+    properties:
+      column_type: ATTRIBUTE
+  - name: Opened Date
+    column_id: PRODUCTS::OPENED_DATE
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Product Id
+    column_id: PRODUCTS::PRODUCT_ID
+    properties:
+      column_type: ATTRIBUTE
+  - name: Product Name
+    column_id: PRODUCTS::PRODUCT_NAME
+    properties:
+      column_type: ATTRIBUTE
+  - name: Payment Type
+    column_id: PRODUCTS::PRODUCT_TYPE
+    properties:
+      column_type: ATTRIBUTE
+  - name: Transaction Type
+    column_id: TRANSACTIONS::TRANSACTION_TYPE
+    properties:
+      column_type: ATTRIBUTE
+  - name: Transaction Id
+    column_id: TRANSACTIONS::TRANSACTION_ID
+    properties:
+      column_type: ATTRIBUTE
+  - name: Amount
+    column_id: TRANSACTIONS::AMOUNT
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Description
+    column_id: TRANSACTIONS::DESCRIPTION
+    properties:
+      column_type: ATTRIBUTE
+  properties:
+    is_bypass_rls: false
+    join_progressive: true
+    sage_config:
+      is_sage_enabled: false
