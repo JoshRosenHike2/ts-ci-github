@@ -1,4 +1,14 @@
 [ {
+  "originalGuid" : "464a4378-a82a-4863-b092-a2bce5cffe20",
+  "mappedGuid" : "8869fc1a-52d7-4b65-8d0e-2d8b07e91b89",
+  "counter" : 0,
+  "additionalMapping" : {
+    "7320d31f-00e2-45b0-982f-b3461bdcbe01" : "39af829b-2ef4-4156-8a4e-57d7c44cdc75",
+    "d51f322a-1aa5-401b-b887-241a6fe27c04" : "dfd427cc-1e7d-438d-a9ab-0ef23b8cddbe",
+    "04688e36-3b80-4fbd-9501-9071793bd559" : "7ee16266-c1fc-4a72-bb6b-1292e8e18988",
+    "e4ff11ae-03b9-4642-a25a-9b442692751d" : "9e75d94c-2ff2-47ea-85f0-0f4a643ab91c"
+  }
+}, {
   "originalGuid" : "eb6ac4de-4322-4050-8df8-17e8632ece96",
   "mappedGuid" : "e71fd93b-c2b8-4fc5-acc6-ad8f801b0e4e",
   "counter" : 0,
