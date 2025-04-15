@@ -1,0 +1,216 @@
+guid: 464a4378-a82a-4863-b092-a2bce5cffe20
+liveboard:
+  name: Financial Demo Data
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Top 10 Most Expensive Transactions
+      tables:
+      - id: Demo_Transaction_Data
+        name: Demo_Transaction_Data
+        fqn: 987f0810-a1c3-46f9-9e92-e6d251352a84
+      search_query: "top [Amount] by [Transaction Id]"
+      answer_columns:
+      - name: Total Amount
+      - name: Transaction Id
+      table:
+        table_columns:
+        - column_id: Total Amount
+          show_headline: false
+        - column_id: Transaction Id
+          show_headline: false
+        ordered_column_ids:
+        - Transaction Id
+        - Total Amount
+        client_state: ""
+      chart:
+        type: BAR
+        chart_columns:
+        - column_id: Total Amount
+        - column_id: Transaction Id
+        axis_configs:
+        - x:
+          - Transaction Id
+          "y":
+          - Total Amount
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: d51f322a-1aa5-401b-b887-241a6fe27c04
+  - id: Viz_2
+    answer:
+      name: List of Transactions
+      description: Transaction Data
+      tables:
+      - id: Demo_Transaction_Data
+        name: Demo_Transaction_Data
+        fqn: 987f0810-a1c3-46f9-9e92-e6d251352a84
+      search_query: "[Transaction Id] [First Name] [Last Name] [Transaction Type] [Merchant Name] [Description]"
+      answer_columns:
+      - name: Description
+      - name: First Name
+      - name: Last Name
+      - name: Merchant Name
+      - name: Transaction Id
+      - name: Transaction Type
+      table:
+        table_columns:
+        - column_id: Description
+          show_headline: false
+        - column_id: First Name
+          show_headline: false
+        - column_id: Last Name
+          show_headline: false
+        - column_id: Merchant Name
+          show_headline: false
+        - column_id: Transaction Id
+          show_headline: false
+        - column_id: Transaction Type
+          show_headline: false
+        ordered_column_ids:
+        - Transaction Id
+        - First Name
+        - Last Name
+        - Transaction Type
+        - Merchant Name
+        - Description
+        client_state: ""
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: Description
+        - column_id: First Name
+        - column_id: Last Name
+        - column_id: Merchant Name
+        - column_id: Transaction Id
+        - column_id: Transaction Type
+        axis_configs:
+        - x:
+          - Merchant Name
+          "y":
+          - Description
+          color:
+          - First Name
+          - Last Name
+          - Transaction Type
+          - Transaction Id
+        client_state: ""
+      display_mode: TABLE_MODE
+    viz_guid: 04688e36-3b80-4fbd-9501-9071793bd559
+  - id: Viz_3
+    answer:
+      name: Account Reach
+      tables:
+      - id: Demo_Transaction_Data
+        name: Demo_Transaction_Data
+        fqn: 987f0810-a1c3-46f9-9e92-e6d251352a84
+      search_query: "[First Name] [Last Name] [Country] [State] [City]"
+      answer_columns:
+      - name: City
+      - name: Country
+      - name: First Name
+      - name: Last Name
+      - name: State
+      table:
+        table_columns:
+        - column_id: City
+          show_headline: false
+        - column_id: Country
+          show_headline: false
+        - column_id: First Name
+          show_headline: false
+        - column_id: Last Name
+          show_headline: false
+        - column_id: State
+          show_headline: false
+        ordered_column_ids:
+        - First Name
+        - Last Name
+        - Country
+        - State
+        - City
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"First Name\",\"columnProperty\": {}}]}"
+      chart:
+        type: GEO_AREA
+        chart_columns:
+        - column_id: City
+        - column_id: Country
+        - column_id: First Name
+        - column_id: Last Name
+        - column_id: State
+        axis_configs:
+        - x:
+          - State
+          "y":
+          - City
+          color:
+          - Country
+          - First Name
+          - Last Name
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"visibleSeriesNames\": [\"usa, alice, morgan\",\"usa, bob, thompson\"],\"mapviewport\": {\"center\": [-9093096.696353547,5029498.554159823],\"zoomLevel\": 6.482498675035989,\"extent\": [-1.022578777305325E7,3827655.5492844814,-7960405.619653844,6231341.559035164]},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"First Name\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"State\",\"columnProperty\": {}},{\"columnId\": \"City\",\"columnProperty\": {}},{\"columnId\": \"Country\",\"columnProperty\": {}},{\"columnId\": \"Last Name\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a069335f-4f13-4b08-bb39-57cad9576890\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"City\"],\"isOpposite\": false}},{\"id\": \"8b7b8b06-2a92-4484-8bdf-37f867ced568\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"usa, alice, morgan\",\"colorMap\": [{\"serieName\": \"State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]},{\"serieName\": \"usa, bob, thompson\",\"colorMap\": [{\"serieName\": \"State\",\"color\": [\"#f7fbff\",\"#cfe0f9\",\"#a6c6f3\",\"#77aded\",\"#3295e6\",\"#287ac6\",\"#1e60a6\",\"#144888\",\"#08306b\"]}]}]}"
+      display_mode: CHART_MODE
+    viz_guid: e4ff11ae-03b9-4642-a25a-9b442692751d
+  - id: Viz_4
+    answer:
+      name: Top Spenders
+      tables:
+      - id: Demo_Transaction_Data
+        name: Demo_Transaction_Data
+        fqn: 987f0810-a1c3-46f9-9e92-e6d251352a84
+      search_query: "top 10 by [Amount] [First Name] [Last Name] sort by [Amount] descending"
+      answer_columns:
+      - name: First Name
+      - name: Last Name
+      - name: Total Amount
+      table:
+        table_columns:
+        - column_id: First Name
+          show_headline: false
+        - column_id: Last Name
+          show_headline: false
+        - column_id: Total Amount
+          show_headline: false
+        ordered_column_ids:
+        - First Name
+        - Last Name
+        - Total Amount
+        client_state: ""
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: First Name
+        - column_id: Last Name
+        - column_id: Total Amount
+        axis_configs:
+        - x:
+          - First Name
+          - Last Name
+          "y":
+          - Total Amount
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Last Name\",\"columnProperty\": {}},{\"columnId\": \"Total Amount\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"First Name\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"eb664e29-dcf1-4c4e-83a7-d1505f713cd1\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Amount\"],\"isOpposite\": false}},{\"id\": \"e81383bc-52b8-47dd-8df9-358a5c6e2096\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"First Name\",\"Last Name\"]}}],\"systemSeriesColors\": [{\"serieName\": \"alice\",\"color\": \"#48D1E0\"},{\"serieName\": \"bob\",\"color\": \"#2E75F0\"},{\"serieName\": \"Total Amount\",\"color\": \"#FF8142\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 7320d31f-00e2-45b0-982f-b3461bdcbe01
+  layout:
+    tiles:
+    - visualization_id: Viz_4
+      x: 4
+      "y": 8
+      height: 8
+      width: 6
+    - visualization_id: Viz_1
+      x: 0
+      "y": 0
+      height: 8
+      width: 6
+    - visualization_id: Viz_2
+      x: 0
+      "y": 8
+      height: 8
+      width: 4
+    - visualization_id: Viz_3
+      x: 6
+      "y": 0
+      height: 8
+      width: 6
