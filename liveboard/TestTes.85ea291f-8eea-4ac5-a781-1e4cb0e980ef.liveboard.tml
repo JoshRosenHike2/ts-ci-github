@@ -1,0 +1,78 @@
+guid: 85ea291f-8eea-4ac5-a781-1e4cb0e980ef
+liveboard:
+  name: TestTes
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Impressions
+      tables:
+      - id: "TS: BI Server"
+        name: "TS: BI Server"
+        fqn: eaab6de7-c556-468c-8b4b-ff6d78dd3ecf
+      search_query: "[Impressions] [Latency (us)] [Postgres Latency (us)]"
+      answer_columns:
+      - name: Total Impressions
+      - name: Total Latency (us)
+      - name: Total Postgres Latency (us)
+      table:
+        table_columns:
+        - column_id: Total Impressions
+          show_headline: false
+        - column_id: Total Latency (us)
+          show_headline: false
+        - column_id: Total Postgres Latency (us)
+          show_headline: false
+        ordered_column_ids:
+        - Total Impressions
+        - Total Latency (us)
+        - Total Postgres Latency (us)
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Impressions
+        - column_id: Total Latency (us)
+        - column_id: Total Postgres Latency (us)
+        axis_configs:
+        - "y":
+          - Total Impressions
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 2226303d-7756-4021-8d83-6a004401ceb5
+  - id: Viz_2
+    answer:
+      name: Total Impressions
+      tables:
+      - id: "TS: BI Server"
+        name: "TS: BI Server"
+        fqn: eaab6de7-c556-468c-8b4b-ff6d78dd3ecf
+      search_query: "[Impressions] [Latency (us)] [Postgres Latency (us)]"
+      answer_columns:
+      - name: Total Impressions
+      - name: Total Latency (us)
+      - name: Total Postgres Latency (us)
+      table:
+        table_columns:
+        - column_id: Total Impressions
+          show_headline: false
+        - column_id: Total Latency (us)
+          show_headline: false
+        - column_id: Total Postgres Latency (us)
+          show_headline: false
+        ordered_column_ids:
+        - Total Impressions
+        - Total Latency (us)
+        - Total Postgres Latency (us)
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Impressions
+        - column_id: Total Latency (us)
+        - column_id: Total Postgres Latency (us)
+        axis_configs:
+        - "y":
+          - Total Impressions
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: fe50b5bd-6fa3-42a9-8e6a-98d5b1cc6400
