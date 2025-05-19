@@ -27,6 +27,7 @@ liveboard:
         - Total Latency (us)
         - Total Postgres Latency (us)
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total Impressions\",\"columnProperty\": {}},{\"columnId\": \"Total Latency (us)\",\"columnProperty\": {}},{\"columnId\": \"Total Postgres Latency (us)\",\"columnProperty\": {}}]}"
       chart:
         type: KPI
         chart_columns:
@@ -37,6 +38,7 @@ liveboard:
         - "y":
           - Total Impressions
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Impressions\",\"columnProperty\": {}},{\"columnId\": \"Total Latency (us)\",\"columnProperty\": {}},{\"columnId\": \"Total Postgres Latency (us)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"491b9309-ea34-47a1-a774-d16574925eac\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Impressions\"],\"isOpposite\": false}},{\"id\": \"52fac777-6bf5-49ac-84cd-70e4c0bfc0a8\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: CHART_MODE
     viz_guid: 2226303d-7756-4021-8d83-6a004401ceb5
   - id: Viz_2
@@ -64,6 +66,7 @@ liveboard:
         - Total Latency (us)
         - Total Postgres Latency (us)
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total Impressions\",\"columnProperty\": {}},{\"columnId\": \"Total Latency (us)\",\"columnProperty\": {}},{\"columnId\": \"Total Postgres Latency (us)\",\"columnProperty\": {}}]}"
       chart:
         type: KPI
         chart_columns:
@@ -74,5 +77,10 @@ liveboard:
         - "y":
           - Total Impressions
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Impressions\",\"columnProperty\": {}},{\"columnId\": \"Total Latency (us)\",\"columnProperty\": {}},{\"columnId\": \"Total Postgres Latency (us)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"594fe1e9-5b45-4882-b721-132cd033420a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Impressions\"],\"isOpposite\": false}},{\"id\": \"5ca45bb1-3eee-46c9-a710-9ad8781dd759\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: CHART_MODE
     viz_guid: fe50b5bd-6fa3-42a9-8e6a-98d5b1cc6400
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+    - visualization_id: Viz_2
