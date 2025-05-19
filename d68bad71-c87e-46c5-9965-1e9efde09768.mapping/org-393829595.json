@@ -48,8 +48,14 @@
 }, {
   "originalGuid" : "8869fc1a-52d7-4b65-8d0e-2d8b07e91b89",
   "mappedGuid" : "8869fc1a-52d7-4b65-8d0e-2d8b07e91b89",
-  "counter" : 0,
+  "counter" : 1,
   "additionalMapping" : {
-    "91933391-8670-4f13-8bff-83f96272f483" : "82f124fd-275b-4fd6-8d96-8cd0df5e973f"
+    "91933391-8670-4f13-8bff-83f96272f483" : "82f124fd-275b-4fd6-8d96-8cd0df5e973f",
+    "b472843b-534c-4f05-b8ef-d196b355749c" : "95b5c7be-e33d-4e60-a5e8-42708da05700"
   }
+}, {
+  "originalGuid" : "589c3274-059a-41d6-81f2-4711d0e331da",
+  "mappedGuid" : "589c3274-059a-41d6-81f2-4711d0e331da",
+  "counter" : 0,
+  "additionalMapping" : { }
 } ]
