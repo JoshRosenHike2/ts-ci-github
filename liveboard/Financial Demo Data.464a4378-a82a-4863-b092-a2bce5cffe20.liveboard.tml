@@ -23,6 +23,7 @@ liveboard:
         - Transaction Id
         - Total Amount
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Transaction Id\",\"columnProperty\": {}},{\"columnId\": \"Total Amount\",\"columnProperty\": {}}]}"
       chart:
         type: BAR
         chart_columns:
@@ -34,6 +35,7 @@ liveboard:
           "y":
           - Total Amount
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Transaction Id\",\"columnProperty\": {}},{\"columnId\": \"Total Amount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"8ead7211-d249-43b3-a9d5-9f844e15da16\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Amount\"],\"isOpposite\": false}},{\"id\": \"cc3a6bf8-45d0-432e-ad12-2819ed717ff7\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Transaction Id\"]}}]}"
       display_mode: CHART_MODE
     viz_guid: d51f322a-1aa5-401b-b887-241a6fe27c04
   - id: Viz_2
@@ -74,6 +76,7 @@ liveboard:
         - Merchant Name
         - Description
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Transaction Id\",\"columnProperty\": {}},{\"columnId\": \"First Name\",\"columnProperty\": {}},{\"columnId\": \"Last Name\",\"columnProperty\": {}},{\"columnId\": \"Transaction Type\",\"columnProperty\": {}},{\"columnId\": \"Merchant Name\",\"columnProperty\": {}},{\"columnId\": \"Description\",\"columnProperty\": {}}]}"
       chart:
         type: SCATTER
         chart_columns:
@@ -94,6 +97,7 @@ liveboard:
           - Transaction Type
           - Transaction Id
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Transaction Id\",\"columnProperty\": {}},{\"columnId\": \"First Name\",\"columnProperty\": {}},{\"columnId\": \"Last Name\",\"columnProperty\": {}},{\"columnId\": \"Transaction Type\",\"columnProperty\": {}},{\"columnId\": \"Merchant Name\",\"columnProperty\": {}},{\"columnId\": \"Description\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"002a71e0-330c-42df-9f12-aca3d61aa123\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Description\"],\"isOpposite\": false}},{\"id\": \"e1c57f96-9654-4800-8070-500172205753\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Merchant Name\"]}}]}"
       display_mode: TABLE_MODE
     viz_guid: 04688e36-3b80-4fbd-9501-9071793bd559
   - id: Viz_3
@@ -176,6 +180,7 @@ liveboard:
         - Last Name
         - Total Amount
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"First Name\",\"columnProperty\": {}},{\"columnId\": \"Last Name\",\"columnProperty\": {}},{\"columnId\": \"Total Amount\",\"columnProperty\": {}}]}"
       chart:
         type: COLUMN
         chart_columns:
@@ -217,6 +222,7 @@ liveboard:
         - Total Latency (us)
         - Total Postgres Latency (us)
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total Impressions\",\"columnProperty\": {}},{\"columnId\": \"Total Latency (us)\",\"columnProperty\": {}},{\"columnId\": \"Total Postgres Latency (us)\",\"columnProperty\": {}}]}"
       chart:
         type: KPI
         chart_columns:
@@ -227,15 +233,40 @@ liveboard:
         - "y":
           - Total Impressions
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Impressions\",\"columnProperty\": {}},{\"columnId\": \"Total Latency (us)\",\"columnProperty\": {}},{\"columnId\": \"Total Postgres Latency (us)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"2637cfc3-7284-43b2-80c3-5d7d4a6de5cf\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Impressions\"],\"isOpposite\": false}},{\"id\": \"ec9da5b0-0d19-4de4-b842-f8de5bf13d51\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: CHART_MODE
     viz_guid: 91933391-8670-4f13-8bff-83f96272f483
+  - id: Viz_6
+    answer:
+      name: Total Amount
+      tables:
+      - id: Demo_Transaction_Data
+        name: Demo_Transaction_Data
+        fqn: 987f0810-a1c3-46f9-9e92-e6d251352a84
+      search_query: "[Amount]"
+      answer_columns:
+      - name: Total Amount
+      table:
+        table_columns:
+        - column_id: Total Amount
+          show_headline: false
+        ordered_column_ids:
+        - Total Amount
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total Amount\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Amount
+        axis_configs:
+        - "y":
+          - Total Amount
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Amount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"9921d49f-0138-4c4e-8bbf-533096ddb790\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Amount\"],\"isOpposite\": false}},{\"id\": \"8c7fee31-2144-4f55-9fb0-65e7c51ab95f\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: b472843b-534c-4f05-b8ef-d196b355749c
   layout:
     tiles:
-    - visualization_id: Viz_4
-      x: 4
-      "y": 8
-      height: 8
-      width: 6
     - visualization_id: Viz_1
       x: 0
       "y": 0
@@ -251,3 +282,10 @@ liveboard:
       "y": 0
       height: 8
       width: 6
+    - visualization_id: Viz_4
+      x: 4
+      "y": 8
+      height: 8
+      width: 6
+    - visualization_id: Viz_5
+    - visualization_id: Viz_6
